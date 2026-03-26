@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB-DBdxn5mwLyu96aThoobK-le2fly6POs",
-  authDomain: "let-s-play-96cc0.firebaseapp.com",
-  projectId: "let-s-play-96cc0",
-  storageBucket: "let-s-play-96cc0.firebasestorage.app",
-  messagingSenderId: "593560493743",
-  appId: "1:593560493743:web:663a7b83d95e15fdc77e5a",
-  measurementId: "G-H5NSM1VB7L"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyB-DBdxn5mwLyu96aThoobK-le2fly6POs",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "let-s-play-96cc0.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "let-s-play-96cc0",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "let-s-play-96cc0.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "593560493743",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:593560493743:web:663a7b83d95e15fdc77e5a",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-H5NSM1VB7L"
 };
 
 // Initialize Firebase
