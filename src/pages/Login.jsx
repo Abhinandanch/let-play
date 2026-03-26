@@ -54,7 +54,7 @@ function Login() {
           </button>
         </form>
         <p className="text-center mt-6 text-slate-400">
-          New team? <Link to="/" className="text-yellow-400 font-bold underline">Register Here</Link>
+          New team? <Link to="/register" className="text-yellow-400 font-bold underline">Register Here</Link>
         </p>
       </div>
     </div>

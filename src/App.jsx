@@ -28,6 +28,7 @@ function App() {
         
         {/* Registration & Signup */}
         <Route path="/signup" element={<RegisterTeam />} />
+        <Route path="/register" element={<RegisterTeam />} />
         <Route path="/register/:gameId" element={<RegisterTeam />} />
 
         {/* Dashboard & Login */}
