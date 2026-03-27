@@ -49,7 +49,7 @@ function Enrollments() {
   };
 
   const handleReject = async (id) => {
-    if(window.confirm("Kya aap is team ko list se hatana chahte hain?")) {
+    if(window.confirm("Do you want to remove team?")) {
       updateStatus(id, 'rejected');
     }
   };

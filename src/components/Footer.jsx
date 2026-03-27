@@ -9,15 +9,21 @@ function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
-          {/* Logo & About */}
-          <div className="col-span-1 md:col-span-1">
-            <Link to="/" className="text-3xl font-black text-yellow-400 italic tracking-tighter mb-4 block">
-              LET'S PLAY
-            </Link>
-            <p className="text-slate-500 text-sm leading-relaxed font-medium">
-              India's growing platform for local sports tournaments. Connect, Compete, and Conquer. 🏆
-            </p>
-          </div>
+         {/* Footer.jsx */}
+
+{/* Logo & About Section */}
+<div className="col-span-1 md:col-span-1">
+  <Link 
+    to="/vision"   
+    className="text-3xl font-black text-yellow-400 italic tracking-tighter mb-4 block"
+  >
+    LET'S PLAY
+  </Link>
+  <p className="text-slate-500 text-sm leading-relaxed font-medium">
+    India's growing platform for local sports tournaments. Connect, Compete, and Conquer. 🏆
+  </p>
+</div>
+
 
           {/* Quick Links */}
           <div>
@@ -33,10 +39,27 @@ function Footer() {
           <div>
             <h4 className="text-white font-black uppercase text-xs tracking-widest mb-6">Support & Help</h4>
             <ul className="space-y-4 text-slate-400 text-sm font-bold">
-              <li><Link to="#" className="hover:text-yellow-400 transition-colors">How to Enroll?</Link></li>
-              <li><Link to="#" className="hover:text-yellow-400 transition-colors">Rules & Regulations</Link></li>
-              <li><Link to="#" className="hover:text-yellow-400 transition-colors">Privacy Policy</Link></li>
-            </ul>
+  <li>
+    <Link to="/how-to-enroll" className="hover:text-yellow-400 transition-colors">
+      How to Enroll?
+    </Link>
+  </li>
+  <li>
+    <Link to="/rules" className="hover:text-yellow-400 transition-colors">
+      Rules & Regulations
+    </Link>
+  </li>
+  <li>
+    <Link to="/privacy" className="hover:text-yellow-400 transition-colors">
+      Privacy Policy
+    </Link>
+  </li>
+  <li>
+    <Link to="/feedback" className="inline-block mt-4 text-[10px] font-black border border-slate-800 px-4 py-2 rounded-full hover:border-yellow-400 hover:text-yellow-400 transition-all uppercase tracking-widest">
+      Post a Feedback ⚡
+    </Link>
+  </li>
+</ul>
           </div>
 
           {/* Contact Info */}
